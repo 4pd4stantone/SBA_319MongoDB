@@ -1,6 +1,7 @@
-//Commit frequently to the git repository. Total commits so far: 5;
+//Commit frequently to the git repository. Total commits so far: 6;
 
 import express from "express";
+import mongoose from "mongoose";
 import "dotenv/config";
 import medicationsRoutes from './routes/medications.js';
 import nursesRoutes from './routes/nurses.js'
@@ -29,12 +30,13 @@ app.listen(port, () => {
 
 
 // Use at least three different data collections within the database (such as users, posts, or comments).
-// Done: Nurses, patients, and medications
+// Done: nurses, patients, and medications
 
 //Utilize reasonable data modeling practices.
 //Done: in all 3 files in the model folder
 
 //Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database.
+//Done: all three data collections have Get methods.
 
 //Create POST routes for data, as appropriate, using appropriate insertion commands to add data to the database. At least one data collection should allow for client creation via a POST request.
 

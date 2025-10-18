@@ -53,6 +53,7 @@ const patientSchema = new mongoose.Schema({
         required: true,
     },
     sex: {
+        type: String,
         enum: ["Male", "Female"],
         message: "{VALUE} is not a valid sex",
         required: true,
@@ -111,9 +112,9 @@ const patientSchema = new mongoose.Schema({
     },
 });
 
-patientSchema.index({ geographical_location: 1 });
-patientSchema.index({ program_location: 1 });
-patientSchema.index({ main_brightPath_clinic: 1 })
+patientSchema.index({ geographical_location: Number });
+patientSchema.index({ program_location: Number });
+patientSchema.index({ main_brightPath_clinic: Number })
 
 const Patients = mongoose.model("patients", patientSchema, "patients")
 

@@ -1,10 +1,21 @@
-//Commit frequently to the git repository. Total commits so far: 3;
+//Commit frequently to the git repository. Total commits so far: 4;
 
 import express from "express";
-import mongoose from "mongoose";
 import "dotenv/config";
 
+const port = process.env.PORT;
 
+const app = express();
+app.set('view engine', 'ejs');
+app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.send("SBA 319 is live and running")
+});
+
+app.listen(port, () => {
+    console.log(`Listening on port: ${port}.`)
+})
 
 
 
@@ -13,6 +24,7 @@ import "dotenv/config";
 // Done: Nurses, patients, and medications
 
 //Utilize reasonable data modeling practices.
+//
 
 //Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database.
 

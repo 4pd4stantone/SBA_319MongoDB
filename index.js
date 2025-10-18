@@ -1,13 +1,21 @@
-//Commit frequently to the git repository. Total commits so far: 4;
+//Commit frequently to the git repository. Total commits so far: 5;
 
 import express from "express";
 import "dotenv/config";
+import medicationsRoutes from './routes/medications.js';
+import nursesRoutes from './routes/nurses.js'
+import patientsRoutes from './routes/patients.js'
 
 const port = process.env.PORT;
 
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.json());
+
+app.use(express.static("public"));
+app.use("/medications", medicationsRoutes);
+app.use("/nurses", nursesRoutes);
+app.use("/patients", patientsRoutes);
 
 app.get('/', (req, res) => {
     res.send("SBA 319 is live and running")
@@ -24,7 +32,7 @@ app.listen(port, () => {
 // Done: Nurses, patients, and medications
 
 //Utilize reasonable data modeling practices.
-//
+//Done: in all 3 files in the model folder
 
 //Create GET routes for all data that should be exposed to the client, using appropriate query commands to retrieve the data from the database.
 

@@ -89,6 +89,15 @@ const medications = [
     drug_interactions: ["May reduce absorption of drugs needing acidic pH"],
     nursing_education: "Take before breakfast; do not crush delayed-release capsules.",
   },
+  {
+    medication_name: "Ferrous sulfate",
+    route: "Oral",
+    purpose: "Iron deficiency anemia treatment",
+    side_effects: ["Constipation", "Dark stools", "Nausea"],
+    contraindications: ["Hemochromatosis", "Hemolytic anemia"],
+    drug_interactions: ["Decreased absorption with calcium or PPIs; separate from levothyroxine"],
+    nursing_education: "Take with vitamin C source if tolerated; avoid tea or dairy near dosing; keep out of reach of children.",
+  },
 ];
 
 export default medications;

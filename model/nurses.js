@@ -49,12 +49,12 @@ const nurseSchema = new mongoose.Schema({
     },
     team: {
         type: String,
-        enum: ["Bronx Team", "Brooklyn Team"],
+        enum: ["Bronx Team", "Brooklyn Team"], //Bronx Coverage = Bronx + Westchester. Brooklyn Coverage = Brooklyn + Staten Island + Long Island + Queens + Manhattan.
         message: "{VALUE} is not a valid team name",
         required: true,
     },
     geographical_area_covered: {
-        type: String,
+        type: [String],
         enum: ["Bronx", "Manhattan", "Queens", "Westchester", "Brooklyn", "Long Island", "Staten Island"],
         message: "{VALUE} is not a valid geographical area covered",
         required: true,

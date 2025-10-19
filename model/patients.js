@@ -8,7 +8,7 @@ const fosterParentInfoSchema = new mongoose.Schema({
   },
   address: {
     type: String,
-    default: true,
+    required: true,
   },
   telephone: {
     type: Number,
@@ -28,11 +28,9 @@ const outsideClinicSchema = new mongoose.Schema({
   },
   address: {
     type: String,
-    default: true,
   },
   telephone: {
-    type: Number,
-    required: true,
+    type: String,
   },
   email: {
     type: String,
@@ -112,9 +110,9 @@ const patientSchema = new mongoose.Schema({
     },
 });
 
-patientSchema.index({ geographical_location: Number });
-patientSchema.index({ program_location: Number });
-patientSchema.index({ main_brightPath_clinic: Number })
+patientSchema.index({ geographical_location: 1 });
+patientSchema.index({ program_location: 1 });
+patientSchema.index({ main_brightPath_clinic: 1 })
 
 const Patients = mongoose.model("patients", patientSchema, "patients")
 

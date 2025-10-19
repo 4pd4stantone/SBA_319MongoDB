@@ -1,4 +1,4 @@
-//Commit frequently to the git repository. Total commits so far: 6;
+//Commit frequently to the git repository. Total commits so far: 7;
 
 import express from "express";
 import mongoose from "mongoose";
@@ -6,6 +6,11 @@ import "dotenv/config";
 import medicationsRoutes from './routes/medications.js';
 import nursesRoutes from './routes/nurses.js'
 import patientsRoutes from './routes/patients.js'
+
+const connectionString = process.env.ATLAS_URI;
+
+await mongoose.connect(connectionString);
+
 
 const port = process.env.PORT;
 

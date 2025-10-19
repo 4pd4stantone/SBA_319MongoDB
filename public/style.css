@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    border-bottom: 1px #204344 solid;
+    background-color:#50a0a1;
+}
+
+.nav-bar {
+    flex-grow: 1;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    margin-top: 8px;
+}
+        
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow:#204344 1px 1px 0px;
+}
+
+#main-title {
+    color: #fac257;
+    text-shadow: #ac740b 1px 1px 1px;
+}
+
+label, input, .form {
+            display: block;
+            text-align: center;
+            margin:  10px auto 10px auto;
+            width: 180px;
+}
+
+footer {
+    display: flex;
+    border-top: 1px #204344 solid;
+    background-color:#50a0a1;
+    position: absolute;
+    bottom: 0px;
+    width: auto;
+    right: 6px;
+    left: 6px;
+}
+
+span {
+    margin: 0px 10px 0px 10px;
+    position: absolute;
+}

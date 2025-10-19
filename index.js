@@ -1,4 +1,4 @@
-//Commit frequently to the git repository. Total commits so far: 7;
+//Commit frequently to the git repository. Total commits so far: 8;
 
 import express from "express";
 import mongoose from "mongoose";
@@ -24,7 +24,8 @@ app.use("/nurses", nursesRoutes);
 app.use("/patients", patientsRoutes);
 
 app.get('/', (req, res) => {
-    res.send("SBA 319 is live and running")
+    console.log("Get /home")
+    res.render('index');
 });
 
 app.listen(port, () => {

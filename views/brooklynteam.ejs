@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    <main>
+      <div style="text-align: center; margin-top: 20px">
+        <h1 id="main-title">Brooklyn Team</h1>
+      </div>
+      <div>
+        <table class="nurse-table">
+          <% result.forEach(nurse => { %>
+          <tbody class="nurse-body">
+            <tr>
+              <th colspan="2" class="nurse-header"><%= nurse.title %></th>
+            </tr>
+            <tr>
+              <td class="label">Name</td>
+              <td class="value">
+                <a href="/nurses/<%= nurse._id %>">
+                  <%= nurse.first_name %> <%= nurse.last_name %>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="label">Schedule</td>
+              <td class="value"><%= nurse.schedule%></td>
+            </tr>
+            <tr>
+              <td class="label">Telephone</td>
+              <td class="value"><%= nurse.telephone %></td>
+            </tr>
+            <tr>
+              <td class="label">E-mail</td>
+              <td class="value">
+                <a href="mailto:<%= nurse.email %>"><%= nurse.email %></a>
+              </td>
+            </tr>
+          </tbody>
+          <% }) %>
+        </table>
+      </div>
+    </main>
+    <footer style="position: relative; bottom: -30px;right: auto; left: auto;">
+        <div class="nav-bar">
+            <a href="/" style="width: 30px"><img src="/BrightPath_logo.png" alt="Bright Path Logo & Name" style="width: 30px; margin-top: -5px; box-shadow: #204344 1px 1px; flex-grow: 0;"><span style="color: black; margin-top: 2px;">Copyright &copy BrightPath 1980</span></a>
+        </div>
+</footer>
+  </body>
+</html>

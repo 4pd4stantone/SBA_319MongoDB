@@ -12,7 +12,7 @@ nav {
     margin-top: 8px;
 }
         
-a {
+.nav-tag {
     font-size: 20px;
     text-decoration: none;
     color: whitesmoke;
@@ -23,6 +23,32 @@ a {
 #main-title {
     color: #fac257;
     text-shadow: #ac740b 1px 1px 1px;
+}
+
+.team {
+    color: #fac257;
+    text-shadow: #ac740b 1px 1px 1px;
+    text-decoration: underline;
+    border-radius: 35px;
+    border: 3px black solid;
+    padding: 15px 30px 15px 30px;
+    background-color: #50a0a1;
+}
+
+#team-title {
+    display: flex;
+    margin: 100px 100px 100px 100px;
+    justify-content: center;
+}
+
+#bx-t {
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
+#bk-t {
+    margin-left: 50px;
+    white-space: nowrap;
 }
 
 label, input, .form {
@@ -46,4 +72,49 @@ footer {
 span {
     margin: 0px 10px 0px 10px;
     position: absolute;
+}
+
+.nurse-table { 
+    width: 66%; 
+    border-collapse: collapse; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nurse-body { 
+border: 1px solid #204344 ; 
+
+}
+.nurse-header { 
+        text-align: center; 
+        background: #50a0a1; 
+        padding: 8px;
+        color: whitesmoke;
+        font-size: 20px;
+}
+td, th { 
+    border-top: 1px solid #204344 ; 
+    padding: 8px; 
+}
+
+
+.label { 
+    width: 33%; 
+    font-weight: bolder; 
+}
+
+#add-nurse-btn {
+    width: 100px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 25px;
+    background-color: #50a0a1;
+}
+
+#add-nurse-link {
+    text-decoration: none;
+    color: #fac257;
+    text-shadow: #ac740b 1px 1px 1px;
 }

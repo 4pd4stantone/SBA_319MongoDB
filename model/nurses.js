@@ -64,6 +64,12 @@ const nurseSchema = new mongoose.Schema({
         enum: ["8am-4pm", "9am-5pm", "10am-6pm"],
         message: "{VALUE} is not a valid schedule",
         required: true,
+    },
+    telephone: {
+        type: String,
+    },
+    email: {
+        type: String,
     }
 });
 

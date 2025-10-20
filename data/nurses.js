@@ -11,6 +11,8 @@ const nurses = [
     team: "Brooklyn Team",
     geographical_area_covered: ["Brooklyn", "Staten Island"],
     schedule: "9am-5pm",
+    telephone: "646-555-0172",
+    email: "meredith.grey@brightpath.com",
   },
   {
     nurse_id: 1,
@@ -24,6 +26,8 @@ const nurses = [
     team: "Brooklyn Team",
     geographical_area_covered: ["Queens", "Long Island"],
     schedule: "8am-4pm",
+    telephone: "718-555-0129",
+    email: "jackie.peyton@brightpath.com",
   },
   {
     nurse_id: 2,
@@ -37,6 +41,8 @@ const nurses = [
     team: "Brooklyn Team",
     geographical_area_covered: ["Manhattan", "Queens"],
     schedule: "10am-6pm",
+    telephone: "917-555-0146",
+    email: "olivia.benson@brightpath.com",
   },
   {
     nurse_id: 3,
@@ -50,6 +56,8 @@ const nurses = [
     team: "Brooklyn Team",
     geographical_area_covered: ["Brooklyn", "Manhattan"],
     schedule: "9am-5pm",
+    telephone: "332-555-0193",
+    email: "cristina.yang@brightpath.com",
   },
   {
     nurse_id: 4,
@@ -63,6 +71,8 @@ const nurses = [
     team: "Brooklyn Team",
     geographical_area_covered: ["Brooklyn", "Queens"],
     schedule: "8am-4pm",
+    telephone: "347-555-0164",
+    email: "april.kepner@brightpath.com",
   },
   {
     nurse_id: 5,
@@ -76,6 +86,8 @@ const nurses = [
     team: "Brooklyn Team",
     geographical_area_covered: ["Staten Island", "Long Island"],
     schedule: "10am-6pm",
+    telephone: "929-555-0187",
+    email: "zoe.hart@brightpath.com",
   },
   {
     nurse_id: 6,
@@ -89,6 +101,8 @@ const nurses = [
     team: "Bronx Team",
     geographical_area_covered: ["Bronx", "Westchester"],
     schedule: "9am-5pm",
+    telephone: "914-555-0113",
+    email: "carol.hathaway@brightpath.com",
   },
   {
     nurse_id: 7,
@@ -102,6 +116,8 @@ const nurses = [
     team: "Bronx Team",
     geographical_area_covered: ["Bronx"],
     schedule: "8am-4pm",
+    telephone: "718-555-0152",
+    email: "peter.benton@brightpath.com",
   },
   {
     nurse_id: 8,
@@ -115,6 +131,8 @@ const nurses = [
     team: "Bronx Team",
     geographical_area_covered: ["Bronx", "Westchester"],
     schedule: "9am-5pm",
+    telephone: "347-555-0138",
+    email: "ethan.choi@brightpath.com",
   },
   {
     nurse_id: 9,
@@ -128,6 +146,8 @@ const nurses = [
     team: "Bronx Team",
     geographical_area_covered: ["Bronx"],
     schedule: "10am-6pm",
+    telephone: "929-555-0105",
+    email: "samantha.taggart@brightpath.com",
   },
 ];
 

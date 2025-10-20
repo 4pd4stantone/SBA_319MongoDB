@@ -108,13 +108,34 @@ td, th {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     display: block;
     border-radius: 25px;
     background-color: #50a0a1;
+    text-decoration: none;
+    color: #fac257;
+    text-shadow: #ac740b 1px 1px 1px;
 }
 
 #add-nurse-link {
     text-decoration: none;
+    color: #fac257;
+    text-shadow: #ac740b 1px 1px 1px;
+}
+
+.nurse-info {
+    color:  #204344 ;
+}
+
+.nurse-list {
+    /* outline: 1px red solid; */
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+.nursing-title {
     color: #fac257;
     text-shadow: #ac740b 1px 1px 1px;
 }

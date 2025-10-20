@@ -11,7 +11,7 @@ const nursingLicenseSchema = new mongoose.Schema({
     default: true,
   },
   expiration_date: {
-    type: Date,
+    type: String,
     required: true,
   }
 });
@@ -45,7 +45,7 @@ const nurseSchema = new mongoose.Schema({
         type: Number,
     },
     date_hired: {
-        type: Date,
+        type: String,
     },
     team: {
         type: String,

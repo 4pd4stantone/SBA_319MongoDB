@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <main>
+        <div style="text-align: center; margin-top: 20px;">
+            <h1 id="main-title"><%= result.title %></h1>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <h2 class="nurse-info"><%= result.first_name %> <%= result.last_name %>, <%= result.level_of_education %></h2>
+            <h3 class="nursing-title"><%= result.team%></h3>
+        </div> 
+            <ul style="text-align: center; margin-top: 20px;">
+                <li class="nurse-list">Year of Nursing Experience: <%= result.years_of_experience %> years</li>
+                <li class="nurse-list">Date Hired: <%= result.date_hired %></li>
+                <li class="nurse-list">Years at BrightPath: <%= yearsAtBrightPath %> years</li>
+                <li class="nurse-list">Geographical Area Covered: <%= result.geographical_area_covered %></li>
+            </ul> 
+         <div style="text-align: center; margin-top: 20px;">
+            <h3 class="nursing-title">Nursing License</h3>
+        </div> 
+        <div>
+            <ul style="text-align: center; margin-top: 20px;">
+                <li class="nurse-list">License Number: <%= result.nursing_license.license_number %></li>
+                <li class="nurse-list">Expiration Date: <%= result.nursing_license.expiration_date %></li>
+                <li class="nurse-list">Months till Expiration: <%= monthsLeft %> months</li>
+                <li class="nurse-list" id="status">License Status: <%= monthsLeft > 0 ? "Active" : "Inactive" %></li>
+            </ul> 
+        </div>
+        
+    
+    </main>
+     <%- include('./partials/footer.ejs') %>
+     <script>
+        let status = document.getElementById("status")
+        if ( <%= monthsLeft%> <= 0) { status.style.color = "red"} else { status.style.color = "green"}
+     </script>
+    
+</body>
+</html>

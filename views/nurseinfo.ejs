@@ -22,8 +22,8 @@
         </div> 
         <div>
             <ul style="text-align: center; margin-top: 20px;">
-                <li class="nurse-list">License Number: <%= result.nursing_license.license_number %></li>
-                <li class="nurse-list">Expiration Date: <%= result.nursing_license.expiration_date %></li>
+                <li class="nurse-list">License Number: <%= result.license_number %></li>
+                <li class="nurse-list">Expiration Date: <%= result.expiration_date %></li>
                 <li class="nurse-list">Months till Expiration: <%= monthsLeft %> months</li>
                 <li class="nurse-list" id="status">License Status: <%= monthsLeft > 0 ? "Active" : "Inactive" %></li>
             </ul> 

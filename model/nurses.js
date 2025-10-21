@@ -1,21 +1,6 @@
 import mongoose from "mongoose";
 import { ObjectId } from "bson";
 
-const nursingLicenseSchema = new mongoose.Schema({
-  license_number: {
-    type: Number,
-    required: true,
-  },
-  active: {
-    type: Boolean,
-    default: true,
-  },
-  expiration_date: {
-    type: String,
-    required: true,
-  }
-});
-
 const nurseSchema = new mongoose.Schema({
     nurse_id: {
         type: Number,
@@ -33,10 +18,18 @@ const nurseSchema = new mongoose.Schema({
         type: String,
         default: "Nurse Case Manager",
     },
-    nursing_license: {
-        type: nursingLicenseSchema,
-        required: true,
-    }, 
+    license_number: {
+    type: Number,
+    required: true,
+    },
+    active: {
+    type: Boolean,
+    default: true,
+    },
+    expiration_date: {
+    type: String,
+    required: true,
+    },
     level_of_education: {
         type: String,
         required: true,
@@ -54,7 +47,7 @@ const nurseSchema = new mongoose.Schema({
         required: true,
     },
     geographical_area_covered: {
-        type: [String],
+        type: String,
         enum: ["Bronx", "Manhattan", "Queens", "Westchester", "Brooklyn", "Long Island", "Staten Island"],
         message: "{VALUE} is not a valid geographical area covered",
         required: true,

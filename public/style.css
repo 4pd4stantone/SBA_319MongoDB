@@ -1,185 +1,240 @@
 nav {
-    display: flex;
-    border-bottom: 1px #204344 solid;
-    background-color:#50a0a1;
+  display: flex;
+  border-bottom: 1px #204344 solid;
+  background-color: #50a0a1;
 }
 
 .nav-bar {
-    flex-grow: 1;
-    width: 100px;
-    text-align: center;
-    height: 30px;
-    margin-top: 8px;
+  flex-grow: 1;
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  margin-top: 8px;
 }
-        
+
 .nav-tag {
-    font-size: 20px;
-    text-decoration: none;
-    color: whitesmoke;
-    font-weight: bolder;
-    text-shadow:#204344 1px 1px 0px;
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bolder;
+  text-shadow: #204344 1px 1px 0px;
 }
 
 #main-title {
-    color: #fac257;
-    text-shadow: #ac740b 1px 1px 1px;
+  color: #fac257;
+  text-shadow: #ac740b 1px 1px 1px;
 }
 
 .team {
-    color: #fac257;
-    text-shadow: #50a0a1 1px 1px 1px;
-    text-decoration: underline;
-    /* border-radius: 35px;
+  color: #fac257;
+  text-shadow: #50a0a1 1px 1px 1px;
+  text-decoration: underline;
+  /* border-radius: 35px;
     border: 3px black solid; */
-    padding: 15px 30px 15px 30px;
+  padding: 15px 30px 15px 30px;
 }
 
 #team-title {
-    display: flex;
-    margin: 100px 100px 100px 100px;
-    justify-content: center;
+  display: flex;
+  margin: 100px 100px 100px 100px;
+  justify-content: center;
 }
 
 #bx-t {
-    margin-right: 50px;
-    white-space: nowrap;
+  margin-right: 50px;
+  white-space: nowrap;
 }
 
 #bk-t {
-    margin-left: 50px;
-    white-space: nowrap;
+  margin-left: 50px;
+  white-space: nowrap;
 }
 
-label, input, .form {
-            display: block;
-            text-align: center;
-            margin:  10px auto 10px auto;
-            width: 180px;
+label,
+input,
+.form {
+  display: block;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  width: 180px;
 }
 
 footer {
-    display: flex;
-    border-top: 1px #204344 solid;
-    background-color:#50a0a1;
-    position: absolute;
-    bottom: 6px;
-    width: auto;
-    right: 6px;
-    left: 6px;
+  display: flex;
+  border-top: 1px #204344 solid;
+  background-color: #50a0a1;
+  position: absolute;
+  bottom: 6px;
+  width: auto;
+  right: 6px;
+  left: 6px;
 }
 
 span {
-    margin: 0px 10px 0px 10px;
-    position: absolute;
+  margin: 0px 10px 0px 10px;
+  position: absolute;
 }
 
-.nurse-table { 
-    width: 66%; 
-    border-collapse: collapse; 
-    margin-left: auto;
-    margin-right: auto;
+.nurse-table {
+  width: 66%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.nurse-body { 
-border: 1px solid #204344 ; 
-
+.nurse-body {
+  border: 1px solid #204344;
 }
-.nurse-header { 
-        text-align: center; 
-        background: #50a0a1; 
-        padding: 8px;
-        color: whitesmoke;
-        font-size: 20px;
+.nurse-header {
+  text-align: center;
+  background: #50a0a1;
+  padding: 8px;
+  color: whitesmoke;
+  font-size: 20px;
 }
-td, th { 
-    border-top: 1px solid #204344 ; 
-    padding: 8px; 
-}
-
-
-.label { 
-    width: 33%; 
-    font-weight: bolder; 
+td,
+th {
+  border-top: 1px solid #204344;
+  padding: 8px;
 }
 
-#add-nurse-btn {
-    /* width: 100px; */
-    /* padding: 10px; */
-    margin-left: auto;
-    /* margin-right: auto; */
-    margin-top: 50px;
-    display: block;
-    border-radius: 25px;
-    background-color: #50a0a1;
-    text-decoration: none;
-    color: #fac257;
-    text-shadow: #ac740b 1px 1px 1px;
-    position: relative;
-    bottom: -55px;
+.label {
+  width: 33%;
+  font-weight: bolder;
+}
+
+.add-nurse-btn {
+  /* width: 100px; */
+  /* padding: 10px; */
+  margin-left: auto;
+  /* margin-right: auto; */
+  margin-top: 50px;
+  display: block;
+  border-radius: 25px;
+  background-color: #50a0a1;
+  text-decoration: none;
+  color: #fac257;
+  text-shadow: #ac740b 1px 1px 1px;
+  position: relative;
+  bottom: -55px;
+}
+
+.add-nurse-btn2 {
+  width: 100px;
+  /* padding: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: block;
+  border-radius: 25px;
+  background-color: #50a0a1;
+  text-decoration: none;
+  color: #fac257;
+  text-shadow: #ac740b 1px 1px 1px;
+  /* position: relative;
+    bottom: -55px; */
 }
 
 #edit-nurse-btn {
-    /* width: 100px; */
-    /* padding: 10px; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    display: block;
-    border-radius: 25px;
-    background-color: #50a0a1;
-    text-decoration: none;
-    color: #fac257;
-    text-shadow: #ac740b 1px 1px 1px;
-    /* position: relative;
+  /* width: 100px; */
+  /* padding: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  display: block;
+  border-radius: 25px;
+  background-color: #50a0a1;
+  text-decoration: none;
+  color: #fac257;
+  text-shadow: #ac740b 1px 1px 1px;
+  /* position: relative;
     bottom: -55px; */
 }
 
 #add-nurse-link {
-    text-decoration: none;
-    color: #fac257;
-    text-shadow: #ac740b 1px 1px 1px;
+  text-decoration: none;
+  color: #fac257;
+  text-shadow: #ac740b 1px 1px 1px;
 }
 
 .nurse-info {
-    color:  #204344 ;
+  color: #204344;
 }
 
 .nurse-list {
-    /* outline: 1px red solid; */
-    width: 30%;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: left;
+  /* outline: 1px red solid; */
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
 }
 
 .nursing-title {
-    color: #fac257;
-    text-shadow: #ac740b 1px 1px 1px;
+  color: #fac257;
+  text-shadow: #ac740b 1px 1px 1px;
 }
 
 #btns {
-    display: flex;
+  display: flex;
 }
 
 .delete-btn {
-    margin-left: auto;
-    color: #fac257;
-    border-radius: 25px;
-    background-color: #50a0a1;
-    text-decoration: none;
+  margin-left: auto;
+  color: #fac257;
+  border-radius: 25px;
+  background-color: #50a0a1;
+  text-decoration: none;
 }
 .edit-btn {
-    text-shadow: #ac740b 1px 1px 1px;
-    color: #fac257;
-    border-radius: 25px;
-    background-color: #50a0a1;
-    text-decoration: none;
+  text-shadow: #ac740b 1px 1px 1px;
+  color: #fac257;
+  border-radius: 25px;
+  background-color: #50a0a1;
+  text-decoration: none;
 }
 
 .email-input {
-    field-sizing: content; 
-    min-width: 50px; 
-    max-width: 300px; 
-    margin-left: auto;
-    margin-right: auto;
+  field-sizing: content;
+  min-width: 50px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nurse-box {
+   
+    width: 202px;
+    margin: 0px auto 0px auto;
+}
+.inner-box {
+     border:#50a0a1 1px solid;
+     margin: 10px auto 10px auto;
+}
+.caseloads-nurses {
+  display: block;
+  color: whitesmoke;
+  background-color: #50a0a1;
+  width: 200px;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  
+}
+
+.caseloads-patients {
+  display: block;
+  background-color: whitesmoke;
+  color:#50a0a1
+  width: 200px;
+  margin: 10px auto 10px auto;
+}
+
+.patient-list {
+  display: block;
+  width: 200px;
+  margin: 10px auto 10px auto;
+  text-align: center;
+}
+
+.pt-tag {
+    color:#50a0a1
 }

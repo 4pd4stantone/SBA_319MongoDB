@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <main>
+        <div style="text-align: center; margin-top: 20px;">
+            <h1 id="main-title"><%= result.first_name%> <%= result.last_name%> </h1>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <h2 class="nurse-info"><%= result.program %> Progam</h2>
+            <h2 class="nurse-info"><%= result.program_location %> Location</h2>
+            <h3 class="nursing-title">Contact Information</h3>
+        </div> 
+            <ul style="text-align: center; margin-top: 20px;">
+                <li class="nurse-list">Foster Parent: <%= result.foster_parent_name%></li>
+                <li class="nurse-list">Address: <%= result.fp_address %></li>
+                <li class="nurse-list">Telephone: <%= result.fp_telephone %></li>
+                <li class="nurse-list">Email: <%= result.fp_email %></li>
+                <li class="nurse-list">Home Clinic: <%= result.main_brightPath_clinic %></li>
+            </ul> 
+         <div style="text-align: center; margin-top: 20px;">
+            <h3 class="nursing-title">Medical Information</h3>
+        </div> 
+        <div>
+            <ul style="text-align: center; margin-top: 20px;">
+                <li class="nurse-list">License Number: <%= result.license_number %></li>
+                <li class="nurse-list">Expiration Date: <%= result.expiration_date %></li>
+              
+               
+            </ul> 
+    
+    </main>
+     <footer style="position: relative; bottom: -30px; right: auto; left: auto">
+      <div class="nav-bar">
+        <a href="/" style="width: 30px"
+          ><img
+            src="/BrightPath_logo.png"
+            alt="Bright Path Logo & Name"
+            style="
+              width: 30px;
+              margin-top: -5px;
+              box-shadow: #204344 1px 1px;
+              flex-grow: 0;
+            "
+          /><span style="color: whitesmoke; margin-top: 2px"
+            >Copyright &copy BrightPath 1980</span
+          ></a
+        >
+      </div>
+    </footer>
+</body>
+</html>

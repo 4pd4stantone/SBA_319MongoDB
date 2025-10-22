@@ -66,6 +66,8 @@ const nurseSchema = new mongoose.Schema({
     }
 });
 
+nurseSchema.index({ team: 1 });
+
 const Nurses = mongoose.model("nurses", nurseSchema, "nurses")
 
 export default Nurses

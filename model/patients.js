@@ -23,12 +23,12 @@ const patientSchema = new mongoose.Schema({
     required: true,
   },
   date_of_birth: {
-    type: Date,
+    type: String,
     required: true,
   },
 
   admission_date: {
-    type: Date,
+    type: String,
     required: true,
   },
   foster_parent_name: {

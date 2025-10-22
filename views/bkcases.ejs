@@ -14,7 +14,7 @@
                 <div class="patient-list">
                   <% bkpatients.forEach(p => { %>
                     <% if (p.nurse_id == n.nurse_id) { %>
-                      <p class="caseloads-patients"><a href="/patients/cases/<% p._id %>" class="pt-tag"><%= p.last_name %>, <%= p.first_name %></a></p>
+                      <p class="caseloads-patients"><a href="/patients/cases/<%= p._id %>" class="pt-tag"><%= p.last_name %>, <%= p.first_name %></a></p>
                     <% } %>
                   <% }) %>
                 </div>

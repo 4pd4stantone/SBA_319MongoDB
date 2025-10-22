@@ -66,9 +66,6 @@ const patientSchema = new mongoose.Schema({
   medication_list: {
     type: [String],
   },
-  discharge_date: {
-    type: Date,
-  },
   program_location: {
     type: String,
     enum: ["Bronx", "Brooklyn"],

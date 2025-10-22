@@ -28,6 +28,16 @@
                 <li class="nurse-list" id="status">License Status: <%= monthsLeft > 0 ? "Active" : "Inactive" %></li>
             </ul> 
         </div>
+        <div id="btns">
+            <div>
+                <button class="edit-btn">
+                    <a href="/nurses/edit/<%= result._id %>" class="edit-btn">Edit</a>
+                </button>
+            </div>
+            <form action="/nurses/<%= result._id %>?_method=DELETE" method="POST" class="delete-btn">
+                <button class="delete-btn">Delete</button>
+            </form>
+        </div>
         
     
     </main>

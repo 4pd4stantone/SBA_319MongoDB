@@ -27,12 +27,11 @@ nav {
 
 .team {
     color: #fac257;
-    text-shadow: #ac740b 1px 1px 1px;
+    text-shadow: #50a0a1 1px 1px 1px;
     text-decoration: underline;
-    border-radius: 35px;
-    border: 3px black solid;
+    /* border-radius: 35px;
+    border: 3px black solid; */
     padding: 15px 30px 15px 30px;
-    background-color: #50a0a1;
 }
 
 #team-title {
@@ -104,17 +103,35 @@ td, th {
 }
 
 #add-nurse-btn {
-    width: 100px;
-    padding: 10px;
+    /* width: 100px; */
+    /* padding: 10px; */
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    /* margin-right: auto; */
+    margin-top: 50px;
     display: block;
     border-radius: 25px;
     background-color: #50a0a1;
     text-decoration: none;
     color: #fac257;
     text-shadow: #ac740b 1px 1px 1px;
+    position: relative;
+    bottom: -55px;
+}
+
+#edit-nurse-btn {
+    /* width: 100px; */
+    /* padding: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    border-radius: 25px;
+    background-color: #50a0a1;
+    text-decoration: none;
+    color: #fac257;
+    text-shadow: #ac740b 1px 1px 1px;
+    /* position: relative;
+    bottom: -55px; */
 }
 
 #add-nurse-link {
@@ -138,4 +155,31 @@ td, th {
 .nursing-title {
     color: #fac257;
     text-shadow: #ac740b 1px 1px 1px;
+}
+
+#btns {
+    display: flex;
+}
+
+.delete-btn {
+    margin-left: auto;
+    color: #fac257;
+    border-radius: 25px;
+    background-color: #50a0a1;
+    text-decoration: none;
+}
+.edit-btn {
+    text-shadow: #ac740b 1px 1px 1px;
+    color: #fac257;
+    border-radius: 25px;
+    background-color: #50a0a1;
+    text-decoration: none;
+}
+
+.email-input {
+    field-sizing: content; 
+    min-width: 50px; 
+    max-width: 300px; 
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -7,20 +7,20 @@
       <div style="text-align: center; margin-top: 20px">
         <h1 id="main-title">Add New Nurse</h1>
       </div>
-      <form action="/nurses/addnurse" method="POST">
+      <form action="/nurses/edit/<%= result._id %>?_method=PUT" method="POST">
         <label
-          >First Name <input name="first_name" type="text" required /></label
+          >First Name <input name="first_name" type="text" value="<%= result.first_name %>" required /></label
         ><br />
-        <label>Last Name <input name="last_name" type="text" required /></label
+        <label>Last Name <input name="last_name" type="text" value="<%= result.last_name %>" required /></label
         ><br />
         <label
           >Title
-          <input name="title" type="text" value="Nurse Case Manager" /></label
+          <input name="title" type="text" value="<%= result.title %>" /></label
         ><br />
         <label
           >Level of Education<input
             name="level_of_education"
-            type="text"
+            type="text" value="<%= result.level_of_education %>"
             required /></label
         ><br />
         <fieldset style="width: 50%; margin: 0px auto 0px auto">
@@ -28,7 +28,7 @@
           <label
             >License Number<input
               name="license_number"
-              type="number"
+              type="number" value="<%= result.license_number %>"
               required /></label
           ><br />
           <label
@@ -41,7 +41,7 @@
           <label
             >Expiration Date<input
               name="expiration_date"
-              type="date"
+              type="text" value="<%= result.expiration_date %>"
               required
           /></label>
         </fieldset>
@@ -51,14 +51,14 @@
             name="years_of_experience"
             type="number"
             step="0.5"
-            min="0" /></label
+            min="0" value="<%= result.years_of_experience %>"/></label
         ><br />
-        <label>Date Hired <input name="date_hired" type="date" /></label><br />
+        <label>Date Hired <input name="date_hired" type="text" value="<%= result.date_hired %>"/></label><br />
 
         <label
           >Team
           <select name="team" required>
-            <option value="">Select</option>
+            <option value="<%= result.team %>"><%= result.team %></option>
             <option>Bronx Team</option>
             <option>Brooklyn Team</option>
           </select> </label
@@ -67,7 +67,7 @@
         <label
           >Schedule
           <select name="schedule" required>
-            <option value="">Select</option>
+            <option value="<%= result.schedule %>"><%= result.schedule %></option>
             <option>8am-4pm</option>
             <option>9am-5pm</option>
             <option>10am-6pm</option>
@@ -80,7 +80,7 @@
           required
           style="width: 15%; display: block; margin: 0 auto"
         >
-          <option value="" disabled selected>Select an area</option>
+          <option value="<%= result.geographical_area_covered %>" disabled selected><%= result.geographical_area_covered %></option>
           <option value="Bronx">Bronx</option>
           <option value="Manhattan">Manhattan</option>
           <option value="Queens">Queens</option>
@@ -90,18 +90,20 @@
           <option value="Staten Island">Staten Island</option>
         </select>
 
-        <label>Telephone <input name="telephone" type="tel" /></label><br />
+        <label>Telephone <input name="telephone" type="tel" value="<%= result.telephone %>"/></label><br />
         <label
           >Email
           <input
             name="email"
             type="email"
             placeholder="first.last@brightpath.com" 
-            class="email-input"/>
+            value="<%= result.email %>"
+            class="email-input"
+            />
         </label
         ><br /><br />
 
-        <button id="edit-nurse-btn" type="submit">Submit</button>
+        <button id="edit-nurse-btn" type="submit">Update</button>
       </form>
     </main>
     <footer style="position: relative; bottom: -30px; right: auto; left: auto">

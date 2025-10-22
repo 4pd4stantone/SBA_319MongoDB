@@ -6,6 +6,7 @@ import "dotenv/config";
 import medicationsRoutes from './routes/medications.js';
 import nursesRoutes from './routes/nurses.js'
 import patientsRoutes from './routes/patients.js'
+import methodOverride from "method-override"
 
 const connectionString = process.env.ATLAS_URI;
 
@@ -18,6 +19,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride('_method'))
 
 app.use(express.static("public"));
 app.use("/medications", medicationsRoutes);
